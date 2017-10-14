@@ -6,7 +6,7 @@ var Input = React.createClass({
     propTypes: {
         name: React.PropTypes.string.isRequired,
         label: React.PropTypes.string.isRequired,
-        onChange: React.PropTypes.string.isRequired,
+        onChange: React.PropTypes.func.isRequired,
         placeHolder: React.PropTypes.string,
         value: React.PropTypes.string,
         error: React.PropTypes.string
@@ -20,7 +20,7 @@ var Input = React.createClass({
 
         return (
             <div className={wrapperClass}>
-                <label htmlFor={this.propTypes.name}>{this.propTypes.label}</label>
+                <label htmlFor={this.props.name}>{this.props.label}</label>
                 <div className="field">
                     <input type="text"
                         name={this.props.name}
