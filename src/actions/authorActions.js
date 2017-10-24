@@ -16,4 +16,4 @@ var AuthorActions = {
     }
 };
 
-module.exports = AuthorActions
+module.exports = AuthorActions;
